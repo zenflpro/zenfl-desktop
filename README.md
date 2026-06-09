@@ -68,7 +68,7 @@ The app isn't code-signed yet (beta), so your OS will show a warning the first t
 
 ## Pricing
 
-**80 credits per submitted application**, charged when the proposal is sent and **automatically refunded** if the agent couldn't submit (job closed, not logged in, needs review, etc.).
+50 credits per submitted application — a reduced beta price (80 credits normally). You're charged when the proposal is sent and automatically refunded if the agent couldn't submit (job closed, not logged in, needs review, etc.).
 
 ## Support
 
