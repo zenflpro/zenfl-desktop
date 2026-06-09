@@ -24,15 +24,24 @@ Get the latest installer for your OS from the **[latest release](https://github.
 The app isn't code-signed yet (beta), so your OS will show a warning the first time. This is expected.
 
 ### macOS
+
 1. Open the `.dmg` and drag **Zenfl** to **Applications**.
-2. The first launch is blocked because the app is unsigned. **Right-click** the app → **Open** → **Open**.
-   - If macOS still refuses, go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**.
+2. On first launch macOS may say **"Zenfl.app is damaged and can't be opened."** It isn't damaged — macOS just blocks unsigned apps downloaded from the internet. Clear it once with these steps:
+   1. Open **Terminal**: press **⌘ (Command) + Space**, type **Terminal**, and press **Enter**.
+   2. In Terminal, type the following exactly — **including the space at the end** — but **don't press Enter yet**:
+      ```
+      xattr -dr com.apple.quarantine 
+      ```
+   3. Open your **Applications** folder, then **drag the Zenfl app into the Terminal window**. Its location fills in automatically. Now press **Enter**.
+   4. Open **Zenfl** from Applications as usual. You only need to do this once.
 
 ### Windows
+
 1. Run the `Setup .exe`.
 2. If Windows SmartScreen appears, click **More info → Run anyway**.
 
 ### Linux
+
 1. Make the AppImage executable: `chmod +x ./Zenfl-*.AppImage`
 2. Run it: `./Zenfl-*.AppImage`
 
